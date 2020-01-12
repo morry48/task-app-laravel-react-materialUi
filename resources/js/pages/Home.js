@@ -74,8 +74,8 @@ function Home() {
     }
 
 
-    function deletePost(rowData){
-        axios
+    async function deletePost(rowData){
+        await axios
             .post('/api/delete', {
                id: rowData.id
            })
