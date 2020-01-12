@@ -33,7 +33,6 @@ function Home() {
             .get('/api/posts')
             .then(response => {
                 setPosts(response.data);
-                console.log(posts);
             })
             .catch(() => {
                 console.log('通信に失敗しました');
